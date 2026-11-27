@@ -964,25 +964,19 @@ body {
 
 /* Footer */
 .footer {
-  background: var(--bg);
+  background: var(--bg-alt);
   border-top: 1px solid var(--card-border);
-  padding: 4.5rem 0 2.25rem;
+  padding: 4rem 0 2rem;
 }
 
 .footer-cta {
   text-align: center;
-  max-width: 620px;
-  margin: 0 auto 3.25rem;
-  padding: 2.25rem 1.75rem;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 20px;
+  max-width: 600px;
+  margin: 0 auto 3rem;
 }
 
 .footer-cta h2 {
   font-size: 1.9rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
   margin-bottom: 0.75rem;
 }
 
@@ -1001,7 +995,7 @@ body {
 .footer-bottom {
   text-align: center;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(148, 163, 184, 0.08);
+  border-top: 1px solid var(--card-border);
   color: var(--text-muted);
   font-size: 0.88rem;
 }
