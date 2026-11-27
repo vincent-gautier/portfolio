@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Site Vitrine & Back-office — Les feux d'artifices — Vincent Gautier</title>
-  <meta name="description" content="Création et maintenance d'un site vitrine présentant l'association, son personnel et ses micro-crèches, avec interface d'administration pour les employées." />
+  <meta name="description" content="Création et maintenance d'un site vitrine présentant l'association, son personnel et ses micro-crèches, avec interface d'administration permettant aux employées de modifier les données du site." />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
   <link rel="apple-touch-icon" href="../assets/favicon.svg" />
-  <meta name="theme-color" content="#0f1524" />
+  <meta name="theme-color" content="#090d16" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
   <!-- Barre supérieure mobile uniquement -->
   <header class="mobile-topbar">
     <a href="../index.html#accueil" class="logo">
-      <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span><br />
+      <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span>
       <span class="logo-name">Vincent Gautier</span>
     </a>
     <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
@@ -34,7 +34,9 @@
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <a href="../index.html#accueil" class="logo">
-        <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span><br />
+        <div class="logo-row">
+          <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span>
+        </div>
         <span class="logo-name">Vincent Gautier</span>
       </a>
       <p class="sidebar-role">Développeur Web &amp; Logiciel</p>
@@ -72,7 +74,10 @@
     </nav>
 
     <div class="sidebar-footer">
-      <div class="sidebar-location">📍 Montauban / Toulouse</div>
+      <div class="sidebar-status">
+        <span class="mini-dot"></span>
+        <span>Montauban • Toulouse</span>
+      </div>
       <a href="../index.html#contact" class="btn btn-primary btn-block">Me contacter</a>
     </div>
   </aside>
@@ -88,7 +93,7 @@
           <span class="project-meta-item">📍 Montauban & Toulouse</span>
         </div>
         <h1 class="project-detail-title">Site Vitrine & Back-office — Les feux d'artifices</h1>
-        <p class="project-detail-lead">Création et maintenance d'un site vitrine présentant l'association, son personnel et ses micro-crèches, avec interface d'administration pour les employées.</p>
+        <p class="project-detail-lead">Création et maintenance d'un site vitrine présentant l'association, son personnel et ses micro-crèches, avec interface d'administration permettant aux employées de modifier les données du site.</p>
         <div class="project-tags">
             <span class="tech-tag highlight">PHP</span>
             <span class="tech-tag highlight">HTML5</span>

@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Refonte & Migration Web — Auto-école Michelet — Vincent Gautier</title>
-  <meta name="description" content="Modernisation et conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et des technologies récentes." />
+  <meta name="description" content="Conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et un langage informatique plus récents." />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
   <link rel="apple-touch-icon" href="../assets/favicon.svg" />
-  <meta name="theme-color" content="#0f1524" />
+  <meta name="theme-color" content="#090d16" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
   <!-- Barre supérieure mobile uniquement -->
   <header class="mobile-topbar">
     <a href="../index.html#accueil" class="logo">
-      <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span><br />
+      <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span>
       <span class="logo-name">Vincent Gautier</span>
     </a>
     <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
@@ -34,7 +34,9 @@
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <a href="../index.html#accueil" class="logo">
-        <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span><br />
+        <div class="logo-row">
+          <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span>
+        </div>
         <span class="logo-name">Vincent Gautier</span>
       </a>
       <p class="sidebar-role">Développeur Web &amp; Logiciel</p>
@@ -72,7 +74,10 @@
     </nav>
 
     <div class="sidebar-footer">
-      <div class="sidebar-location">📍 Montauban / Toulouse</div>
+      <div class="sidebar-status">
+        <span class="mini-dot"></span>
+        <span>Montauban • Toulouse</span>
+      </div>
       <a href="../index.html#contact" class="btn btn-primary btn-block">Me contacter</a>
     </div>
   </aside>
@@ -88,7 +93,7 @@
           <span class="project-meta-item">📍 Montauban</span>
         </div>
         <h1 class="project-detail-title">Refonte & Migration Web — Auto-école Michelet</h1>
-        <p class="project-detail-lead">Modernisation et conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et des technologies récentes.</p>
+        <p class="project-detail-lead">Conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et un langage informatique plus récents.</p>
         <div class="project-tags">
             <span class="tech-tag highlight">PHP</span>
             <span class="tech-tag highlight">JavaScript</span>
@@ -99,7 +104,7 @@
         </div>
         <!-- Remplacer href="#" par l'URL du site web du projet -->
         <div class="project-detail-actions">
-          <a href="https://autoecolemichelet82.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <a href="https://www.auto-ecole-michelet.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             Visiter le site web <span aria-hidden="true" style="margin-left: 0.45rem;">↗</span>
           </a>
         </div>

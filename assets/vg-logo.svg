@@ -5,6 +5,6 @@
       <stop offset="100%" stop-color="#818cf8" />
     </linearGradient>
   </defs>
-  <rect x="1" y="1" width="62" height="34" rx="8" fill="#161f33" stroke="url(#vgGrad)" stroke-width="1.5" />
+  <rect x="1" y="1" width="62" height="34" rx="8" fill="#111827" stroke="url(#vgGrad)" stroke-width="1.5" />
   <text x="32" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="url(#vgGrad)">VG</text>
 </svg>

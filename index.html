@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vincent Gautier — Développeur Web &amp; Logiciel</title>
-  <meta name="description"
-    content="Portfolio de Vincent Gautier, développeur web et logiciel basé à Montauban / Toulouse (Laravel, Next.js, Angular, C#, Python, PHP)." />
+  <meta name="description" content="Portfolio de Vincent Gautier, développeur web et logiciel basé à Montauban / Toulouse (Laravel, Next.js, Angular, C#, Python, PHP)." />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/favicon.svg" />
-  <meta name="theme-color" content="#0f1524" />
+  <meta name="theme-color" content="#090d16" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <!-- Barre supérieure mobile uniquement -->
   <header class="mobile-topbar">
     <a href="#accueil" class="logo">
-      <span class="logo-bracket">&lt;</span><img src="assets/vg-logo.svg" alt="VG" class="logo-img" /><span
-        class="logo-bracket">/&gt;</span><br />
+      <span class="logo-bracket">&lt;</span><img src="assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span>
       <span class="logo-name">Vincent Gautier</span>
     </a>
     <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
@@ -40,8 +34,9 @@
   <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <a href="#accueil" class="logo">
-        <span class="logo-bracket">&lt;</span><img src="assets/vg-logo.svg" alt="VG" class="logo-img" /><span
-          class="logo-bracket">/&gt;</span><br />
+        <div class="logo-row">
+          <span class="logo-bracket">&lt;</span><img src="assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span>
+        </div>
         <span class="logo-name">Vincent Gautier</span>
       </a>
       <p class="sidebar-role">Développeur Web &amp; Logiciel</p>
@@ -79,7 +74,10 @@
     </nav>
 
     <div class="sidebar-footer">
-      <div class="sidebar-location">📍 Montauban / Toulouse</div>
+      <div class="sidebar-status">
+        <span class="mini-dot"></span>
+        <span>Montauban • Toulouse</span>
+      </div>
       <a href="#contact" class="btn btn-primary btn-block">Me contacter</a>
     </div>
   </aside>
@@ -88,6 +86,7 @@
   <main class="main-content">
     <!-- Hero Section -->
     <section class="hero" id="accueil">
+      <div class="hero-glow"></div>
       <div class="hero-bg-grid"></div>
       <div class="container hero-content">
         <div class="hero-badge">
@@ -98,25 +97,35 @@
           Bonjour, je suis <span class="gradient-text">Vincent Gautier</span>
         </h1>
         <p class="hero-subtitle">
-          Développeur Web &amp; Logiciel — actuellement en <strong>BTS SIO option SLAM</strong>. Je conçois des
-          applications web modernes, maintenables et centrées sur les besoins utilisateurs.
+          Développeur Web &amp; Logiciel — actuellement en <strong>BTS SIO option SLAM</strong>. Je conçois des applications web modernes, maintenables et centrées sur les besoins utilisateurs.
         </p>
         <div class="hero-actions">
           <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
           <a href="#competences" class="btn btn-outline">Explorer ma stack</a>
         </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-pill">
+            <span class="pill-value">BTS SIO SLAM</span>
+            <span class="pill-label">En cours • Caussade</span>
+          </div>
+          <div class="highlight-pill">
+            <span class="pill-value">Full-Stack &amp; Logiciel</span>
+            <span class="pill-label">Web, back-office &amp; applicatif</span>
+          </div>
+          <div class="highlight-pill">
+            <span class="pill-value">Occitanie</span>
+            <span class="pill-label">Montauban • Toulouse</span>
+          </div>
+        </div>
+
         <div class="hero-tech-strip">
-          <span>Laravel</span>
-          <span>•</span>
-          <span>Next.js</span>
-          <span>•</span>
-          <span>Angular</span>
-          <span>•</span>
-          <span>PHP</span>
-          <span>•</span>
-          <span>C# / WPF</span>
-          <span>•</span>
-          <span>Python</span>
+          <span class="tech-chip">Laravel</span>
+          <span class="tech-chip">Next.js</span>
+          <span class="tech-chip">Angular</span>
+          <span class="tech-chip">PHP</span>
+          <span class="tech-chip">C# / WPF</span>
+          <span class="tech-chip">Python</span>
         </div>
       </div>
     </section>
@@ -127,18 +136,15 @@
         <div class="section-header">
           <span class="section-tag">01. Profil</span>
           <h2>À propos de moi</h2>
+          <p class="section-lead">Un parcours hybride alliant développement web, rigueur logicielle et pédagogie auprès des utilisateurs.</p>
         </div>
         <div class="about-grid">
           <div class="about-text">
             <p>
-              Passionné par l'informatique et la création numérique, j'ai construit un parcours polyvalent mêlant
-              <strong>développement web full-stack</strong>, <strong>ingénierie logicielle</strong> et
-              <strong>accompagnement utilisateur</strong>.
+              Passionné par l'informatique et la création numérique, j'ai construit un parcours polyvalent mêlant <strong>développement web full-stack</strong>, <strong>ingénierie logicielle</strong> et <strong>accompagnement utilisateur</strong>.
             </p>
             <p>
-              De la création de sites vitrines administrables à la refonte complète d'applications web vers des
-              technologies modernes, j'aime transformer un besoin concret en une solution fiable, documentée et agréable
-              à utiliser.
+              De la création de sites vitrines administrables à la refonte complète d'applications web vers des technologies modernes, j'aime transformer un besoin concret en une solution fiable, documentée et agréable à utiliser.
             </p>
             <div class="languages-box">
               <h3>Langues</h3>
@@ -157,18 +163,24 @@
           <div class="about-cards">
             <div class="stat-card">
               <div class="stat-icon">💻</div>
-              <h3>Web &amp; Logiciel</h3>
-              <p>Développement front-end, back-end et applications métiers (SLAM).</p>
+              <div>
+                <h3>Web &amp; Logiciel</h3>
+                <p>Développement front-end, back-end et applications métiers (SLAM).</p>
+              </div>
             </div>
             <div class="stat-card">
               <div class="stat-icon">🤝</div>
-              <h3>Travail d'équipe &amp; Formation</h3>
-              <p>Expérience en gestion de projet, documentation technique et formation d'utilisateurs.</p>
+              <div>
+                <h3>Travail d'équipe &amp; Formation</h3>
+                <p>Expérience en gestion de projet, documentation technique et formation d'utilisateurs.</p>
+              </div>
             </div>
             <div class="stat-card">
               <div class="stat-icon">📍</div>
-              <h3>Occitanie</h3>
-              <p>Basé entre Montauban (82), Caussade et Toulouse (31).</p>
+              <div>
+                <h3>Occitanie</h3>
+                <p>Basé entre Montauban (82), Caussade et Toulouse (31).</p>
+              </div>
             </div>
           </div>
         </div>
@@ -181,6 +193,7 @@
         <div class="section-header">
           <span class="section-tag">02. Stack &amp; Savoir-faire</span>
           <h2>Principales Compétences</h2>
+          <p class="section-lead">Filtrez par catégorie pour parcourir mes langages, frameworks, outils et compétences humaines.</p>
         </div>
 
         <div class="skills-filter" id="skills-filter">
@@ -191,79 +204,191 @@
         </div>
 
         <div class="skills-grid" id="skills-grid">
-        <!-- Langages -->
-        <div class="skill-card" data-category="langages">
-          <div class="skill-card-header">
-            <span class="skill-category-badge">Langages Web</span>
+          <!-- Langages Web -->
+          <div class="skill-card" data-category="langages">
+            <div class="skill-card-header">
+              <span class="skill-category-badge">Langages Web</span>
+            </div>
+            <h3>Front-end &amp; Back-end</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 / CSS3</span>
+                  <span class="skill-level">Avancé • 90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">PHP</span>
+                  <span class="skill-level">Avancé • 85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">Avancé • 80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level">Intermédiaire • 70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+              </div>
+            </div>
           </div>
-          <h3>Front-end &amp; Back-end</h3>
-          <div class="tag-cloud">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">SQL</span>
-          </div>
-        </div>
 
-        <div class="skill-card" data-category="langages">
-          <div class="skill-card-header">
-            <span class="skill-category-badge">Langages Logiciels</span>
+          <!-- Langages Logiciels -->
+          <div class="skill-card" data-category="langages">
+            <div class="skill-card-header">
+              <span class="skill-category-badge">Langages Logiciels</span>
+            </div>
+            <h3>Applicatif &amp; Système</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C# / WPF</span>
+                  <span class="skill-level">Intermédiaire • 70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level">Intermédiaire • 70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C / C++</span>
+                  <span class="skill-level">Intermédiaire • 65%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 65%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JEE</span>
+                  <span class="skill-level">Intermédiaire • 60%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">COBOL</span>
+                  <span class="skill-level">Notions • 45%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 45%;"></div></div>
+              </div>
+            </div>
           </div>
-          <h3>Applicatif &amp; Système</h3>
-          <div class="tag-cloud">
-            <span class="tech-tag">C#</span>
-            <span class="tech-tag">WPF</span>
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">C++</span>
-            <span class="tech-tag">C</span>
-            <span class="tech-tag">JEE</span>
-            <span class="tech-tag">COBOL</span>
-          </div>
-        </div>
 
-        <!-- Frameworks -->
-        <div class="skill-card" data-category="frameworks">
-          <div class="skill-card-header">
-            <span class="skill-category-badge">Frameworks</span>
+          <!-- Frameworks -->
+          <div class="skill-card" data-category="frameworks">
+            <div class="skill-card-header">
+              <span class="skill-category-badge">Frameworks</span>
+            </div>
+            <h3>Écosystèmes Modernes</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Laravel</span>
+                  <span class="skill-level">Intermédiaire • 75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress highlight" style="width: 75%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Next.js</span>
+                  <span class="skill-level">Intermédiaire • 70%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress highlight" style="width: 70%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Angular</span>
+                  <span class="skill-level">Intermédiaire • 65%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress highlight" style="width: 65%;"></div></div>
+              </div>
+            </div>
           </div>
-          <h3>Écosystèmes Modernes</h3>
-          <div class="tag-cloud">
-            <span class="tech-tag highlight">Laravel</span>
-            <span class="tech-tag highlight">Next.js</span>
-            <span class="tech-tag highlight">Angular</span>
-          </div>
-        </div>
 
-        <!-- Outils & Méthodes -->
-        <div class="skill-card" data-category="outils">
-          <div class="skill-card-header">
-            <span class="skill-category-badge">DevOps &amp; Gestion</span>
+          <!-- Outils & Méthodes -->
+          <div class="skill-card" data-category="outils">
+            <div class="skill-card-header">
+              <span class="skill-category-badge">DevOps &amp; Gestion</span>
+            </div>
+            <h3>Outils &amp; Méthodologie</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git &amp; GitLab</span>
+                  <span class="skill-level">Avancé • 85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Documentation technique</span>
+                  <span class="skill-level">Avancé • 85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Gestion de projets</span>
+                  <span class="skill-level">Intermédiaire+ • 80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Gestion des équipements</span>
+                  <span class="skill-level">Intermédiaire+ • 75%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+              </div>
+            </div>
           </div>
-          <h3>Outils &amp; Méthodologie</h3>
-          <div class="tag-cloud">
-            <span class="tech-tag">Git</span>
-            <span class="tech-tag">GitLab</span>
-            <span class="tech-tag">Gestion de projets</span>
-            <span class="tech-tag">Documentation technique</span>
-            <span class="tech-tag">Gestion des équipements</span>
-          </div>
-        </div>
 
-        <div class="skill-card" data-category="outils">
-          <div class="skill-card-header">
-            <span class="skill-category-badge">Soft Skills</span>
-          </div>
-          <h3>Humain &amp; Pédagogie</h3>
-          <div class="tag-cloud">
-            <span class="tech-tag">Travail d'équipe</span>
-            <span class="tech-tag">Sensibilisation des jeunes</span>
-            <span class="tech-tag">Formation utilisateurs</span>
+          <!-- Soft Skills -->
+          <div class="skill-card" data-category="outils">
+            <div class="skill-card-header">
+              <span class="skill-category-badge">Soft Skills</span>
+            </div>
+            <h3>Humain &amp; Pédagogie</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Travail d'équipe</span>
+                  <span class="skill-level">Avancé • 90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Formation utilisateurs</span>
+                  <span class="skill-level">Avancé • 85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Sensibilisation des jeunes</span>
+                  <span class="skill-level">Avancé • 85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Projets -->
     <section class="section" id="projets">
@@ -271,6 +396,7 @@
         <div class="section-header">
           <span class="section-tag">03. Réalisations</span>
           <h2>Projets</h2>
+          <p class="section-lead">Études de cas détaillées : contexte, architecture mise en place et apports techniques.</p>
         </div>
 
         <div class="projects-grid">
@@ -281,8 +407,7 @@
             </div>
             <h3>Site Vitrine &amp; Back-office — Les feux d'artifices</h3>
             <p class="project-desc">
-              Création et maintenance d'un site vitrine présentant l'association, son personnel et ses micro-crèches,
-              avec interface permettant aux employées de modifier les données du site.
+              Création et maintenance d'un site vitrine présentant l'association, son personnel et ses micro-crèches, avec interface permettant aux employées de modifier les données du site.
             </p>
             <div class="project-tags">
               <span class="tech-tag">PHP</span>
@@ -291,7 +416,7 @@
               <span class="tech-tag">SQL</span>
             </div>
             <a href="projets/les-feux-dartifices.html" class="project-link">
-              Voir la fiche projet <span aria-hidden="true">→</span>
+              Voir la fiche projet <span class="link-arrow" aria-hidden="true">→</span>
             </a>
           </article>
 
@@ -302,8 +427,7 @@
             </div>
             <h3>Refonte Web — Auto-école Michelet</h3>
             <p class="project-desc">
-              Conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et un langage
-              informatique plus récents.
+              Conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et un langage informatique plus récents.
             </p>
             <div class="project-tags">
               <span class="tech-tag">PHP</span>
@@ -312,7 +436,7 @@
               <span class="tech-tag">Git</span>
             </div>
             <a href="projets/auto-ecole-michelet.html" class="project-link">
-              Voir la fiche projet <span aria-hidden="true">→</span>
+              Voir la fiche projet <span class="link-arrow" aria-hidden="true">→</span>
             </a>
           </article>
 
@@ -321,11 +445,12 @@
     </section>
 
     <!-- Expériences -->
-    <section class="section" id="experiences">
+    <section class="section section-alt" id="experiences">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">03. Parcours Professionnel &amp; Associatif</span>
-          <h2>Expériences &amp; Projets Réalisés</h2>
+          <span class="section-tag">04. Parcours Professionnel &amp; Associatif</span>
+          <h2>Expériences &amp; Missions</h2>
+          <p class="section-lead">Missions en développement web, déploiement matériel, animation d'ateliers et communication.</p>
         </div>
 
         <div class="timeline">
@@ -334,14 +459,12 @@
             <div class="timeline-content">
               <div class="timeline-top">
                 <span class="timeline-date">Juin 2026 – Juillet 2026</span>
-                <span class="timeline-location">Toulouse</span>
+                <span class="timeline-location">📍 Toulouse</span>
               </div>
               <h3>Stage pratique en développement web</h3>
               <p class="timeline-company">Célia ELLMANN</p>
               <p class="timeline-desc">
-                <strong>Développement de site web :</strong> Création d'un site vitrine présentant l'association <em>«
-                  Les feux d'artifices »</em>, son personnel et ses micro-crèches, incluant une interface permettant aux
-                employées de modifier directement les données du site.
+                <strong>Développement de site web :</strong> Création d'un site vitrine présentant l'association <em>« Les feux d'artifices »</em>, son personnel et ses micro-crèches, incluant une interface permettant aux employées de modifier directement les données du site.
               </p>
             </div>
           </article>
@@ -351,13 +474,12 @@
             <div class="timeline-content">
               <div class="timeline-top">
                 <span class="timeline-date">Septembre 2022 – Juin 2025</span>
-                <span class="timeline-location">Montauban</span>
+                <span class="timeline-location">📍 Montauban</span>
               </div>
               <h3>Développeur Bénévole</h3>
               <p class="timeline-company">Association Les feux d'artifices</p>
               <p class="timeline-desc">
-                <strong>Développement &amp; Maintenance :</strong> Conception du site vitrine présentant l'association,
-                son équipe et ses micro-crèches, et suivi technique / maintenance continue sur près de 3 ans.
+                <strong>Développement &amp; Maintenance :</strong> Conception du site vitrine présentant l'association, son équipe et ses micro-crèches, et suivi technique / maintenance continue sur près de 3 ans.
               </p>
             </div>
           </article>
@@ -367,7 +489,7 @@
             <div class="timeline-content">
               <div class="timeline-top">
                 <span class="timeline-date">Juillet 2023 – Septembre 2023</span>
-                <span class="timeline-location">Montauban</span>
+                <span class="timeline-location">📍 Montauban</span>
               </div>
               <h3>Informaticien (Intérim)</h3>
               <p class="timeline-company">SPIE Industrie</p>
@@ -382,13 +504,12 @@
             <div class="timeline-content">
               <div class="timeline-top">
                 <span class="timeline-date">Mars 2022 – Juin 2022</span>
-                <span class="timeline-location">Montauban</span>
+                <span class="timeline-location">📍 Montauban</span>
               </div>
               <h3>Développeur</h3>
               <p class="timeline-company">Auto-école Michelet</p>
               <p class="timeline-desc">
-                <strong>Projet Informatique :</strong> Migration et conversion complète du site web de l'auto-école
-                Michelet Montauban vers une architecture et un langage informatique plus récents.
+                <strong>Projet Informatique :</strong> Migration et conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et un langage informatique plus récents.
               </p>
             </div>
           </article>
@@ -398,13 +519,12 @@
             <div class="timeline-content">
               <div class="timeline-top">
                 <span class="timeline-date">Septembre 2021 – Février 2022</span>
-                <span class="timeline-location">Montauban</span>
+                <span class="timeline-location">📍 Montauban</span>
               </div>
               <h3>Formateur</h3>
               <p class="timeline-company">Conseil local de la jeunesse</p>
               <p class="timeline-desc">
-                <strong>Projet de formation humaine :</strong> Animation d'ateliers pour former les membres du conseil
-                local de la jeunesse à l'utilisation et à la gestion des réseaux sociaux.
+                <strong>Projet de formation humaine :</strong> Animation d'ateliers pour former les membres du conseil local de la jeunesse à l'utilisation et à la gestion des réseaux sociaux.
               </p>
             </div>
           </article>
@@ -414,13 +534,12 @@
             <div class="timeline-content">
               <div class="timeline-top">
                 <span class="timeline-date">Mars 2021 – Juin 2021</span>
-                <span class="timeline-location">Montauban</span>
+                <span class="timeline-location">📍 Montauban</span>
               </div>
               <h3>Chargé de communication</h3>
               <p class="timeline-company">SIRTOMAD</p>
               <p class="timeline-desc">
-                <strong>Projet de formation humaine :</strong> Sensibilisation de la population à la réduction des
-                déchets à travers la scénarisation et la réalisation de deux vidéos explicatives.
+                <strong>Projet de formation humaine :</strong> Sensibilisation de la population à la réduction des déchets à travers la scénarisation et la réalisation de deux vidéos explicatives.
               </p>
             </div>
           </article>
@@ -429,27 +548,26 @@
     </section>
 
     <!-- Formations -->
-    <section class="section section-alt" id="formations">
+    <section class="section" id="formations">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">04. Cursus Académique</span>
+          <span class="section-tag">05. Cursus Académique</span>
           <h2>Formations</h2>
+          <p class="section-lead">Une progression continue du baccalauréat technologique jusqu'au BTS SIO option SLAM.</p>
         </div>
 
         <div class="education-grid">
           <div class="edu-card current">
             <div class="edu-badge">En cours • Nov. 2025 – Aujourd'hui</div>
             <h3>BTS SIO — Option SLAM</h3>
-            <p class="edu-subtitle">Service Informatique aux Organisations • Solutions Logicielles et Applications
-              Métiers</p>
+            <p class="edu-subtitle">Service Informatique aux Organisations • Solutions Logicielles et Applications Métiers</p>
             <p class="edu-school">Lycée polyvalent Claude Nougaro, Caussade</p>
           </div>
 
           <div class="edu-card">
             <div class="edu-badge">Septembre 2020 – Juin 2023</div>
             <h3>Ingénierie du Logiciel (1ère et 2ème années)</h3>
-            <p class="edu-subtitle">Parcours Bachelor (Développeur web et mobile) &amp; Master (Expert en Ingénierie du
-              Logiciel — RNCP 35419)</p>
+            <p class="edu-subtitle">Parcours Bachelor (Développeur web et mobile) &amp; Master (Expert en Ingénierie du Logiciel — RNCP 35419)</p>
             <p class="edu-school">Groupe-AEN INTECH, Montauban (82)</p>
           </div>
 
@@ -463,8 +581,7 @@
           <div class="edu-card">
             <div class="edu-badge">Septembre 2015 – Juin 2018</div>
             <h3>Baccalauréat STI2D — Option SIN</h3>
-            <p class="edu-subtitle">Sciences et Technologies de l'Industrie et du Développement Durable • Système
-              d'Information Numérique (Mention Assez Bien)</p>
+            <p class="edu-subtitle">Sciences et Technologies de l'Industrie et du Développement Durable • Système d'Information Numérique (Mention Assez Bien)</p>
             <p class="edu-school">Lycée général et technologique Antoine Bourdelle, Montauban (82)</p>
           </div>
         </div>
@@ -472,11 +589,12 @@
     </section>
 
     <!-- Centres d'intérêt -->
-    <section class="section" id="interets">
+    <section class="section section-alt" id="interets">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">05. Au-delà du code</span>
+          <span class="section-tag">06. Au-delà du code</span>
           <h2>Activités &amp; Centres d'intérêt</h2>
+          <p class="section-lead">Ce qui nourrit ma créativité, ma logique et mon sens du détail au quotidien.</p>
         </div>
 
         <div class="interests-grid">
@@ -503,16 +621,16 @@
     <footer class="footer" id="contact">
       <div class="container footer-content">
         <div class="footer-cta">
+          <span class="section-tag">Contact</span>
           <h2>Travaillons ensemble</h2>
           <p>Un projet web, un besoin applicatif ou une opportunité en développement ? N'hésitez pas à me contacter.</p>
           <div class="footer-buttons">
             <a href="mailto:vincent.andre.gautier@gmail.com" class="btn btn-primary">M'envoyer un e-mail</a>
-            <a href="https://www.linkedin.com/in/vincent-gautier-11743b26a" class="btn btn-primary" target="_blank"
-              rel="noopener noreferrer">Voir mon profil LinkedIn</a>
+            <a href="https://www.linkedin.com/in/vincent-gautier-11743b26a" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Mon profil LinkedIn</a>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>© <span id="year"></span> Vincent Gautier — Hébergé sur GitHub Pages.</p>
+          <p>© <span id="year">2026</span> Vincent Gautier — Hébergé sur GitHub Pages.</p>
         </div>
       </div>
     </footer>
@@ -520,5 +638,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
