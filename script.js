@@ -1,17 +1,48 @@
 // Année dynamique dans le footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Menu mobile
+// Menu latéral mobile (tiroir coulissant à gauche)
 const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+const sidebar = document.getElementById('sidebar');
+const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+function closeSidebar() {
+  sidebar.classList.remove('open');
+  sidebarOverlay.classList.remove('open');
+}
 
 menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  sidebar.classList.toggle('open');
+  sidebarOverlay.classList.toggle('open');
 });
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
+sidebarOverlay.addEventListener('click', closeSidebar);
+
+document.querySelectorAll('.sidebar a').forEach(link => {
+  link.addEventListener('click', closeSidebar);
+});
+
+// Mise en évidence automatique du lien actif au défilement (Scrollspy)
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-item');
+
+window.addEventListener('scroll', () => {
+  let currentSection = '';
+  const scrollPosition = window.scrollY + 180;
+
+  sections.forEach(section => {
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+    if (scrollPosition >= top && scrollPosition < top + height) {
+      currentSection = section.getAttribute('id');
+    }
+  });
+
+  navItems.forEach(item => {
+    item.classList.remove('active');
+    if (item.getAttribute('href') === `#${currentSection}`) {
+      item.classList.add('active');
+    }
   });
 });
 
