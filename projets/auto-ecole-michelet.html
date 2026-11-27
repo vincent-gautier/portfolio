@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refonte & Migration Web — Auto-école Michelet — Vincent Gautier</title>
+  <meta name="description" content="Modernisation et conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et des technologies récentes." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+  <link rel="apple-touch-icon" href="../assets/favicon.svg" />
+  <meta name="theme-color" content="#0f1524" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <!-- Barre supérieure mobile uniquement -->
+  <header class="mobile-topbar">
+    <a href="../index.html#accueil" class="logo">
+      <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span><br />
+      <span class="logo-name">Vincent Gautier</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Overlay mobile -->
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- Navigation latérale gauche (Sidebar) -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html#accueil" class="logo">
+        <span class="logo-bracket">&lt;</span><img src="../assets/vg-logo.svg" alt="VG" class="logo-img" /><span class="logo-bracket">/&gt;</span><br />
+        <span class="logo-name">Vincent Gautier</span>
+      </a>
+      <p class="sidebar-role">Développeur Web &amp; Logiciel</p>
+    </div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="../index.html#accueil" class="nav-item">
+        <span class="nav-num">00</span>
+        <span>Accueil</span>
+      </a>
+      <a href="../index.html#a-propos" class="nav-item">
+        <span class="nav-num">01</span>
+        <span>À propos</span>
+      </a>
+      <a href="../index.html#competences" class="nav-item">
+        <span class="nav-num">02</span>
+        <span>Compétences</span>
+      </a>
+      <a href="../index.html#projets" class="nav-item active">
+        <span class="nav-num">03</span>
+        <span>Projets</span>
+      </a>
+      <a href="../index.html#experiences" class="nav-item">
+        <span class="nav-num">04</span>
+        <span>Expériences</span>
+      </a>
+      <a href="../index.html#formations" class="nav-item">
+        <span class="nav-num">05</span>
+        <span>Formations</span>
+      </a>
+      <a href="../index.html#interets" class="nav-item">
+        <span class="nav-num">06</span>
+        <span>Centres d'intérêt</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-location">📍 Montauban / Toulouse</div>
+      <a href="../index.html#contact" class="btn btn-primary btn-block">Me contacter</a>
+    </div>
+  </aside>
+
+  <!-- Contenu principal de la fiche projet -->
+  <main class="main-content">
+    <section class="project-detail-hero">
+      <div class="container">
+        <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+        <div class="project-meta-row">
+          <span class="project-badge">Migration & Web</span>
+          <span class="project-meta-item">📅 Mars 2022 – Juin 2022</span>
+          <span class="project-meta-item">📍 Montauban</span>
+        </div>
+        <h1 class="project-detail-title">Refonte & Migration Web — Auto-école Michelet</h1>
+        <p class="project-detail-lead">Modernisation et conversion complète du site web de l'auto-école Michelet Montauban vers une architecture et des technologies récentes.</p>
+        <div class="project-tags">
+            <span class="tech-tag highlight">PHP</span>
+            <span class="tech-tag highlight">JavaScript</span>
+            <span class="tech-tag highlight">HTML5</span>
+            <span class="tech-tag highlight">CSS3</span>
+            <span class="tech-tag highlight">SQL</span>
+            <span class="tech-tag highlight">Git</span>
+        </div>
+        <!-- Remplacer href="#" par l'URL du site web du projet -->
+        <div class="project-detail-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Visiter le site web <span aria-hidden="true" style="margin-left: 0.45rem;">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container project-detail-grid">
+        <div class="detail-card">
+          <h2>Contexte du projet</h2>
+          <p>Projet informatique réalisé pour l'Auto-école Michelet à Montauban afin de remplacer une base technique vieillissante.</p>
+        </div>
+
+        <div class="detail-card">
+          <h2>Objectifs &amp; Fonctionnalités</h2>
+          <ul class="detail-list">
+            <li>Auditer l'ancien site web et recenser l'ensemble des pages, formulaires et contenus existants.</li>
+            <li>Migrer le code vers une architecture moderne, plus sécurisée et plus facile à maintenir.</li>
+            <li>Améliorer l'ergonomie, les temps de chargement et l'affichage sur smartphones.</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <h2>Choix Techniques &amp; Architecture</h2>
+          <ul class="detail-list">
+            <li>Séparation claire entre la logique serveur, l'accès aux données et les vues HTML/CSS.</li>
+            <li>Refonte complète des feuilles de style pour un rendu moderne et adaptable à toutes les tailles d'écran.</li>
+            <li>Documentation technique livrée pour faciliter les futures interventions.</li>
+          </ul>
+        </div>
+
+        <div class="detail-card">
+          <h2>Apports &amp; Compétences mobilisées</h2>
+          <p>J'ai acquis une méthodologie rigoureuse de migration de code existant (analyse de l'existant, iso-fonctionnalité, tests de non-régression).</p>
+        </div>
+
+        <div class="project-nav-footer">
+          <a href="les-feux-dartifices.html" class="btn btn-outline">← Projet précédent</a>
+          <a href="../index.html#projets" class="btn btn-outline">Tous les projets</a>
+          <a href="creation-jeu-video.html" class="btn btn-primary">Projet suivant →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+          <p>© <span id="year">2026</span> Vincent Gautier — Hébergé sur GitHub Pages.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
